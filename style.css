@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction:column; 
+    justify-content:flex-start;
+    align-items: center;
+    width:100vw;
+    background-color: rgb(36, 35, 35);
+    overflow: scroll;
+}
+#board{
+    height:550px;
+    width:550px;
+    border: 2px solid black;
+    background-image: url('image/Bord.jpg');
+    background-size: cover;
+}
+.row{
+    height: 10%;
+    width:100%;
+
+}
+.box{
+    height:100%;
+    width:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(81, 224, 53);
+    border: none;
+    padding: 10px;
+    color: rgb(6, 0, 0);
+    border-radius: 12px;
+    font-size: medium;
+    font-weight: bolder;
+    
+}
+#Restart{
+    background-color: rgb(76, 241, 43);
+    border: none;
+    padding:10px;
+    color: rgb(6, 0, 0);
+    border-radius: 12px;
+    font-size: medium;
+    font-weight: bolder;
+    margin-bottom:10px;
+}
+#roll{
+    background-image: url('image/1dice.jpg');
+    background-size: contain;
+    height:40px;
+    width:40px;
+    border-radius: 5px;
+    /* border-radius: 50%; */
+    text-align: center;
+    cursor: pointer;
+}
+
+#playdice{
+    width: 600px;
+    height:80px;
+    display: none;
+    background: transparent;
+
+}
+#playdice h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index{
+    height:50%;
+    width:50%;
+    border: 3px solid black;
+    border-radius: 50%;
+
+}
+
+.indecator{
+    display:inline-block;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: rgb(212, 255, 0);
+}
+@media (max-width:600px) {
+    #board{
+        width:99vw;
+        height:99vw;
+        
+    }
+    
+    #playdice{
+        width: 100vw;
+    }
+    .index{
+        border: 1.5px solid black;
+    }
+    #playdice{
+        font-size:smaller;
+        font-weight: 100;
+    }
+    .roll{
+        height:30px;
+        width:30px;
+    }
+    .indecator{
+        height:25px;
+        width:25px;
+        border:2px solid black;
+    }
+}
